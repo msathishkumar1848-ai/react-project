@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+}
+
+/* ---------- MAIN BG ---------- */
+.main {
+  height: 60vh;
+  width: 100%;
+  color: #fff;
+  padding: 20px;
+  background: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url('tree.JPEG') center/cover no-repeat;
+}
+
+/* ---------- NAVBAR ---------- */
+.navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #ff7200;
+  font-size: 2rem;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.menu ul li a:hover {
+  color: #ff7200;
+}
+
+/* ---------- DETAILS BUTTON ---------- */
+.details-btn {
+  position: fixed;
+  right: 20px;
+  top: 40%;
+  padding: 14px 22px;
+  background-color: #ff7200;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+.details-btn:hover {
+  background-color: white;
+  color: #ff7200;
+}
+
+/* ---------- SIDEBAR ---------- */
+.sidebar {
+  position: fixed;
+  right: -350px;
+  top: 0;
+  width: 320px;
+  height: 100%;
+  background: #1d1d1d;
+  padding: 20px;
+  color: white;
+  transition: 0.4s ease-in-out;
+  box-shadow: -4px 0 15px rgba(0,0,0,0.5);
+  z-index: 2000;
+}
+
+.sidebar.active {
+  right: 0;
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ff7200;
+}
+
+.sidebar label {
+  display: block;
+  margin-top: 12px;
+  font-size: 15px;
+}
+
+.sidebar input {
+  width: 100%;
+  margin-top: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+/* BUTTONS */
+.save-btn, .close-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.save-btn {
+  background: limegreen;
+}
+
+.save-btn:hover {
+  background: lightsteelblue;
+}
+
+.close-btn {
+  background: red;
+}
+
+/* ---------- TABLE ---------- */
+#detailsTable {
+  width: 90%;
+  max-width: 900px;
+  margin: 30px auto;
+  border-collapse: collapse;
+  text-align: center;
+  color: black;
+}
+
+#detailsTable th,
+#detailsTable td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+#detailsTable th {
+  background: #ff7200;
+  color: white;
+}
+
+.edit-btn {
+  padding: 8px 12px;
+  background: rgb(226, 250, 8);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.delete-btn {
+  padding: 8px 12px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* ---------- FOOTER ---------- */
+.footer {
+  background: #111;
+  color: white;
+  padding: 25px 0;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.footer-container {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+.footer-container h3 {
+  font-size: 22px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.footer-container h3:hover {
+  color: #ff7200;
+  text-decoration: underline;
+}
+
+.footer-links a,
+.social-links a {
+  display:inline-block;
+  margin: 6px 12px;
+  color: #ccc;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.footer-links a:hover,
+.social-links a:hover {
+  color: #ff7200;
+  transform: scale(1.1);
+}
